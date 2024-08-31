@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4ff;
+    margin: 0;
+    padding: 20px;
+}
+.event-list {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.event {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #eaf2ff;
+    
+}
+.event.highlight {
+    background-color: #ffe2e6;
+}
+.event .time {
+    font-size: 24px;
+    font-weight: bold;
+}
+.event .details {
+    flex: 1;
+    margin-left: 20px;
+}
+.event .details h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+.event .details p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+}
+.event .button {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.event .button.sold-out {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
